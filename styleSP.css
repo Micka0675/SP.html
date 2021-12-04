@@ -1,0 +1,400 @@
+
+body/*champ d'application concerne tout le corps de la page*/
+{
+
+	background: url("images/blasonT.png") no-repeat center; /*fond ecran image,fixe, sans repetitions centré en haut*/
+	background-color: #28292A; /*couleur de l'arriere plan (ici gris foncé)*/
+	color: white; /*couleur texte par defaut: blanc*/
+	
+	
+    
+}
+
+
+
+
+@font-face /*code installation police d'ecriture type "font face"*/{
+    font-family: 'abeezeeregular';
+    src: url('fontregular/abeezee-regular-webfont.woff2') format('woff2'),
+         url('fontregular/abeezee-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face /*code installation police d'ecriture type "font face"*/{
+    font-family: 'philly_sansregular';
+    src: url('fontspam/phillysans-webfont.woff2') format('woff2'),
+         url('fontspam/phillysans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#bloc_page
+{
+	margin:auto;
+	width: 1200px;
+
+}
+
+@media all and (max-width: 1024px)
+{
+	#bloc_page 
+	{
+        width: auto;
+
+	}
+}
+
+#Topsection
+{
+   display: flex; 
+   background: url("images/banniere.png")no-repeat center;
+   border-radius: 5px 5px 5px 5px;
+   box-shadow: black 0.5em 0.5em 0.7em ;
+   position: relative;
+   height: 150px;  
+}
+
+@media all and (max-width: 1024px)
+{
+	#Topsection
+	{
+        background: none;
+        flex-direction: column;
+        position: relative;
+
+	}
+}
+
+
+
+
+.Logo /*parametres de la balise type img concernant le logo Section*/
+{
+     
+     
+
+}
+
+@media all and (max-width: 1024px)
+{
+	.Logo
+	{
+        display: none;
+
+	}
+}
+
+
+
+
+
+
+
+.titre1
+{
+	font-family:'philly_sansregular' ;/*police d ecriture*/
+	text-align: center; /*texte centré*/
+	font-size: 4em; /*taille de police ici en em*/
+	text-shadow: black 0.5em 0.5em 0.7em; /*ombre de texte, noire exprimée en em*/
+	margin: auto;
+	
+	position: absolute;
+	left:400px;
+	top:30px;
+	
+	
+	
+}
+
+@media all and (max-width: 1024px)
+{
+	.titre1
+	{
+       
+        position: absolute;
+        left: 10%;
+        bottom: 5%;
+
+	}
+}
+
+.titre2
+{
+	font-size: 1em;
+	font-family:'philly_sansregular' ;
+	text-shadow: black 0.5em 0.5em 0.7em;
+	margin-top:10px;
+	text-align: center;
+	position: absolute;
+	left:530px;
+	top:80px;
+	
+}
+
+@media all and (max-width: 1024px)
+{
+	.titre2
+	{
+        display: none;
+
+	}
+}
+
+
+.Liste
+{
+  
+  
+  font-family: 'abeezeeregular';
+  position: absolute;
+  right:20px;
+  top:30px; 
+  
+}
+
+@media all and (max-width: 1024px)
+{
+	.Liste
+	{
+        position: absolute;
+        right: 15%;
+        top: 10%;
+        width: 5px
+
+	}
+}
+
+
+
+a /*effet appliqué a un lien url*/
+{
+	color: white; 
+}
+
+a:hover /*effet appliqué à un lien url losque que le curseur est pointé dessus*/
+{
+	color: red;
+}
+
+.corps
+{
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	margin-top: 50px;
+	box-shadow: black 0.5em 0.5em 0.7em ;
+
+
+}
+
+@media all and (max-width: 1024px)
+{
+	.corps
+	{
+        flex-direction: column;
+        
+        margin: auto;
+
+    }
+}
+
+.article1
+{
+	display: flex; /*organisation des blocs de l'article 1. Ici cote à cote*/
+	/*flex-direction: column-reverse; si l'on veut les disposer en colonne et inversés*/
+	justify-content: auto;
+	flex-direction: column;
+	width: 300px;
+    padding: 20px;
+    overflow: auto; /*coupure du texte, cette fois en mode auto*/
+    text-align: justify;
+    background: url("images/marqui.png");
+    border-radius: 5px 0px 0px 5px;
+
+}
+
+@media all and (max-width: 1024px)
+{
+	.article1
+	{
+        width: 600px;
+
+    }
+}
+
+
+
+.introduction
+{
+	font-family:'abeezeeregular';
+	font-weight: bold; /*effet de la police:gras*/
+	text-shadow: black 0.5em 0.5em 0.7em; 
+
+	
+}
+
+
+.P1 /*paragraphe renommé P1*/
+{
+
+	font-family:'abeezeeregular'; 
+	text-shadow: black 0.5em 0.5em 0.7em;
+	/* (exemple)min-width: 1px; largeur minimale imposée*/
+	/*border:1px solid black;*//*bordure du bloc P1*/
+    
+    
+}
+
+
+
+.P2
+{
+	
+	font-family:'abeezeeregular';
+	text-shadow: black 0.5em 0.5em 0.7em;
+	/*min-width: 1px; *//*largeur minimale imposée*/
+	/*border:1px solid black;/* /*bordure du bloc P1 ici 1px noire, continue*/
+    text-align: justify;
+
+}
+
+.bloc_centre
+{
+	display: flex;
+	flex-direction: column;
+	width: 600px; 
+	padding: 20px;
+	background: url("images/marqui.png") no-repeat;
+	background-position: center;
+	position: relative; 
+	
+
+	
+}
+
+.photo_description
+{
+   position: absolute;
+   top:360px;
+   right: 0px;
+   margin: 20px;
+   background-color: #181717; 
+   font-size: 0.7em;
+   width: 93.8%;
+   height: 40px;
+   text-align: right;
+   opacity: 95%;
+   font-family: 'abeezeeregular'
+   
+}
+
+
+
+.deplacement
+{
+   font-family: 'abeezeeregular';
+   text-align: left;
+   padding: 20px;
+   text-shadow: black 0.5em 0.5em 0.7em
+}
+
+.em
+{
+	font-style: italic;
+}
+
+.article_centre
+{
+   font-family: 'abeezeeregular';
+   text-align: justify;
+   text-shadow: black 0.5em 0.5em 0.7em;
+   padding: 20px;
+}
+
+.article2
+{
+   font-family: 'abeezeeregular';
+   flex-direction: column;
+   background: url(images/marqui.png);
+   width: 400px;
+   
+   text-shadow: black 0.5em 0.5em 0.7em;
+   
+   background-position: bottom;
+   border-radius: 0px 5px 5px 0px;
+
+
+
+
+
+}
+
+@media all and (max-width: 1024px)
+{
+	.article2
+	{
+        width: 640px;
+
+    }
+}
+
+.contact
+{
+    text-align: right;
+    padding: 20px;
+}
+
+
+
+.P3
+{
+	text-align: justify;
+	padding: 20px;
+}
+
+
+
+nav ul
+{
+   display:flex;
+   
+   list-style: none;
+   list-style-position: line;
+   justify-content: space-around;
+   padding: 20px;
+}
+
+nav li
+{
+	
+	
+}
+.footer
+{
+   display: flex;
+   justify-content: bottom;
+   margin: auto;
+   width: 350px;
+
+
+
+}
+.Bottom
+{
+	text-align: center;
+	
+	
+
+}
+.index
+{
+   width: 220px;
+   margin: auto;
+   display: flex;
+   
+}
+
